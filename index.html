@@ -1,10 +1,9 @@
-﻿
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <title>Formulário de Login e Registro </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/gem/view/style.css" />
 </head>
 <body>
   <div class="container" >
@@ -12,93 +11,95 @@
     <a class="links" id="paralogin"></a>
     <a class="links" id="já tem conta?"></a>
     <a class="links" id="Contato"></a>
-     
+    <a class="links" id="Feedback"></a>
 
 
-    
-    <div class="content">      
+
+
+    <div class="content">
       <!--FORMULÁRIO DE LOGIN-->
 
 
       <div id="login">
-        <form method="post" action=""> 
-            
-          <h1>Geek Equality Meter</h1> 
-          <div align="center"><img src="img/logo.jpg"  height="250" >    </div>
-          
-          
-          <p> 
+        <form method="post" action="">
+
+          <h1>Geek Equality Meter</h1>
+          <div align="center"><img src="/gem/view/img/logo.png"  height="250" >    </div>
+
+
+          <p>
             <label for="nome_login">Seu nome</label>
             <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. adalovelace@alunofg.com"/>
           </p>
-           
-          <p> 
+
+          <p>
             <label for="email_login">Seu e-mail</label>
-            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. 123456" /> 
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. 123456" />
           </p>
-           
-          <p> 
-            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+
+          <p>
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
             <label for="manterlogado">Manter-me logado</label>
           </p>
-           
-          <p> 
-            <input type="submit" value="Logar" /> 
+
+          <p>
+            <input type="submit" value="Logar" />
           </p>
-			
+
 			<p class="link">
             Ainda não tem conta?
 
-          
+
 
             <a href="#paracadastro">Cadastre-se</a>
           </p>
-		  
-		   <p id="lblSobre">  
-            <a href="Contato.html"> Sobre </a>
+
+		   <p id="lblSobre">
+            <a href="/gem/view/Contato.html"> Sobre </a>
           </p>
-		
+
+          <p id="lblFeedback">
+               <a href="/gem/view/feedback.html"> Feedback </a>
+             </p>
+
         </form>
       </div>
- 
+
       <!--FORMULÁRIO DE CADASTRO-->
       <div id="cadastro">
-        <form method="post" action=""> 
+        <form method="post" action="">
+
           <h1>Cadastro</h1>
-          <div align="center"><img src="img/logo.jpg" " height="250" > </div>
-          
-           
-          <p> 
+          <div align="center"><img src="/gem/view/img/logo.png" " height="250" > </div>
+          <p>
             <label for="nome_cad">Seu nome</label>
             <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="ada lovelace" />
           </p>
-           
-          <p> 
+          <p>
             <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="adalovelace@alunofg.com"/> 
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="adalovelace@alunofg.com"/>
           </p>
-           
-          <p> 
+          <p>
             <label for="senha_cad">Sua senha</label>
             <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
           </p>
-           
-		  <p> 
-            <input type="submit" value="Cadastrar"/> 
+		  <p>
+            <input type="submit" value="Cadastrar"/>
           </p>
-          
-		  <p class="link">  
+		  <p class="link">
             Já tem conta?
             <a href="#paralogin"> Ir para Login </a>
           </p>
-		  
-		  
+          <p id="lblSobre">
+               <a href="/gem/view/Contato.html"> Sobre </a>
+             </p>
+
+          <p id="lblFeedback">
+               <a href="/gem/view/feedback.html"> Feedback </a>
+             </p>
 		</form>
-
-
-
       </div>
     </div>
-  </div>  
+  </div>
 </body>
 </html>
