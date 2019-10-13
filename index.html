@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Formulário de Login e Registro </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="/view/style.css" />
-</head>
-<body>
-  <div class="container" >
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-    <a class="links" id="já tem conta?"></a>
-    <a class="links" id="Contato"></a>
-    <a class="links" id="Feedback"></a>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Geek Equality Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/view/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>Geek Equality Manager</h1>
+      <center> <img src="/view/img/logo.png" width=200 height=""></center>
+      <a  href="/index.html">Home</a> <a href="/view/feedback.html">Feedback</a>   <a href="/view/contato.html">Sobre</a>
 
-
-
-
-    <div class="content">
-      <!--FORMULÁRIO DE LOGIN-->
-
-
-      <div id="login">
-        <form method="post" action="">
-
-          <h1>Geek Equality Meter</h1>
-          <div align="center"><img src="/view/img/logo.png"  height="250" >    </div>
-
-
+    </header>
+    <nav id="login">
+      <h2>LOGIN</h2>
           <p>
-            <label for="nome_login">Seu nome</label>
-            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. adalovelace@alunofg.com"/>
+            <label for="email_login">Seu email</label>
+            <input id="email_login" name="email_login" required="required" type="text" placeholder="ex. adalovelace@alunofg.com"/>
           </p>
 
           <p>
-            <label for="email_login">Seu e-mail</label>
+            <label for="email_login">Sua senha</label>
             <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. 123456" />
           </p>
 
@@ -46,60 +34,15 @@
             <input type="submit" value="Logar" />
           </p>
 
-			<p class="link">
-            Ainda não tem conta?
+          <p><h3>Ainda não tem conta? <a href="/view/cadastro.html">Cadastre-se</a></h3></p>
 
+    </nav>
 
+    <footer>
+      <h3>
+      <a href="/index.html">Home</a> <a href="/view/feedback.html">Feedback</a>   <a href="/view/contato.html">Sobre</a>
+      </h3>
+    </footer>
 
-            <a href="#paracadastro">Cadastre-se</a>
-          </p>
-
-		   <p id="lblSobre">
-            <a href="/view/Contato.html"> Sobre </a>
-          </p>
-
-          <p id="lblFeedback">
-               <a href="/view/feedback.html"> Feedback </a>
-             </p>
-
-        </form>
-      </div>
-
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form method="post" action="">
-
-          <h1>Cadastro</h1>
-          <div align="center"><img src="/view/img/logo.png" " height="250" > </div>
-          <p>
-            <label for="nome_cad">Seu nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="ada lovelace" />
-          </p>
-          <p>
-            <label for="email_cad">Seu e-mail</label>
-            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="adalovelace@alunofg.com"/>
-          </p>
-          <p>
-            <label for="senha_cad">Sua senha</label>
-            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-          </p>
-		  <p>
-            <input type="submit" value="Cadastrar"/>
-          </p>
-		  <p class="link">
-            Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-          <p id="lblSobre">
-               <a href="/view/Contato.html"> Sobre </a>
-             </p>
-
-          <p id="lblFeedback">
-               <a href="/view/feedback.html"> Feedback </a>
-             </p>
-		</form>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
