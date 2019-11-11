@@ -159,9 +159,9 @@ input[type="submit"]:hover{
 #cadastro,
 #login{
   position: absolute;
-  top: 0px;
+/*  top: 0px;*/
   width: 88%;
-  padding: 18px 6% 60px 6%;
+  padding:  0px;/*18px 6% 60px 6%;*/
   margin: 0 0 35px 0;
   background-color: #006400
   border: 1px solid rgba(147, 184, 189,0.8);
@@ -176,21 +176,6 @@ input[type="submit"]:hover{
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: both;
-}
-
-#paracadastro:target ~ .content #cadastro,
-#paralogin:target ~ .content #login{
-  z-index: 2;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-
-  -webkit-animation-delay: .1s;
-  animation-delay: .1s;
-}
-#registro:target ~ .content #login,
-#paralogin:target ~ .content #cadastro{
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft;
 }
 
 /*fadeInLeft*/

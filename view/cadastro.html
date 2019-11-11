@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr" xmlns:action="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Geek Equality Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/view/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+  <h1>Geek Equality Manager</h1>
+  <center> <img src="/view/img/logo.png" width=200 height=""></center>
+  <a  href="/index.html">Home</a> <a href="/view/feedback.html">Feedback</a>   <a href="/view/contato.html">Sobre</a>
+</header>
+<nav id="cadastro" >
+  <h2>CADASTRO</h2>
+  <form action=../control/conexao.php method="post">
+    <p>
+      <label for="nome_cad">Seu nome</label>
+      <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="ada lovelace" />
+    </p>
+    <p>
+      <label for="login_cad">Seu login</label>
+      <input id="login_cad" name="login" required="required" type="text" placeholder="ada lovelace" />
+    </p>
+    <p>
+      <label for="email_cad">Seu e-mail</label>
+      <input id="email_cad" name="email_cad" required="required" type="email" placeholder="adalovelace@alunofg.com"/>
+    </p>
+    <p>
+      <label for="senha_cad">Sua senha</label>
+      <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+    </p>
+    <p>
+      <input type="submit" value="Cadastrar"/>
+    </p>
+  </form>
+
+  <p><h3>Já tem conta?<a href="/index.html">Faça login</a></h3></p>
+
+</nav>
+
+<footer id="footer">
+  <h3>
+    <a href="/index.html">Home</a> <a href="/view/feedback.html">Feedback</a>   <a href="/view/contato.html">Sobre</a>
+  </h3>
+</footer>
+
+</body>
+</html>
