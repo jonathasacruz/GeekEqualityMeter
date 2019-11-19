@@ -1,0 +1,96 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #043a29;
+}
+
+#navegacao {
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	height: 45px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+#area {
+	width: 720px;
+	margin: 0 auto;
+}
+
+#area-principal {
+	width: 820px;
+	margin: 55px auto 10px auto;
+}
+
+#logo {
+	float: left;
+}
+
+#menu {
+	float: right;
+	padding: 10px 0;
+}
+
+#postagem {
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#corpo {
+	height:700px;
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #c94189;
+}
+
+
+a {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+a:link {
+	color: #37073d;
+}
+
+a:visited {
+	color: #121312;
+}
+
+a:hover {
+	color: #fff;
+	background: #043a29;
+}
+
+a:active {
+	color: #535353;
+}
+
+.verde {
+	color: #0ea181;
+}
+
+.data-postagem {
+	font-size: 14px;
+	border-bottom: 2px solid #dcf0e3;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.img-postagem{
+	float: left;
+	margin:0 10px 5px 0;
+}

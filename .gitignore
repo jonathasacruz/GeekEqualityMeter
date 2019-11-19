@@ -3,4 +3,4 @@ $ cat .gitignore
 # Ignorar todos os diretórios e arquivos em um diretório.
 !/old/model/*
 !/old/view/*
-!/control/*
+
