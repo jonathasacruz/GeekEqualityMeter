@@ -1,6 +1,5 @@
 <?PHP
 
-//local - Prof. Cloves
 $servidor = "localhost";
 $usuario = "admin";
 $senha = "admin";
@@ -12,13 +11,11 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$nome_cad = $_POST['nome_cad'];
-$email_cad = $_POST['email_cad'];
-$login_cad = $_POST['login_cad'];
-$senha_cad = $_POST['senha_cad'];
+$login = $_POST['login'];
+$senha= $_POST['senha'];
 
 
-$sql = "INSERT INTO usuarios (nome, email, login, senha) VALUES ('$nome_cad','$email_cad', '$login_cad', '$senha_cad')";
+$sql = "INSERT INTO usuarios (login, senha) VALUES ('$login','$senha')";
 
 //mysql_query($sql,$conn);
 
