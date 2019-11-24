@@ -20,7 +20,7 @@ $sql = "SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../meter.html">';
+    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/pos_login/indexl.html">';
     // output data of each row
     //while($row = $result->fetch_assoc()) {
     //    echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";

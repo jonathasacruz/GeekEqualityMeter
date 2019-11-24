@@ -1,5 +1,6 @@
 <?PHP
 
+
 $servidor = "localhost";
 $usuario = "admin";
 $senha = "admin";
@@ -11,27 +12,19 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$login = $_POST['login'];
-$senha= $_POST['senha'];
+$nome = $_POST['nome'];
+$replyto = $_POST['replyto'];
+$comentarios = $_POST['comentarios'];
 
 
-$sql = "INSERT INTO usuarios (login, senha) VALUES ('$login','$senha')";
-
-//mysql_query($sql,$conn);
-
-
+$sql = "INSERT INTO contato (nome, replyto, comentarios) VALUES ('$nome','$replyto', '$comentarios')";
 
 if (mysqli_query($conn, $sql)) {
-    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/cadastro_sucesso.html">';
+    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/pos_login/contato_agradecimentol.html">';
 } else {
     echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/erro.html">';
 }
+
 mysqli_close($conn);
 
-/*
-$_GET['nome'] = $nome;
-$_GET['login'] = $login;
-$_GET['email'] = $email;
-$_GET['senha'] = $senha_cad;
-*/
 ?>

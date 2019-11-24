@@ -19,11 +19,10 @@ $comentarios = $_POST['comentarios'];
 
 $sql = "INSERT INTO contato (nome, replyto, comentarios) VALUES ('$nome','$replyto', '$comentarios')";
 
-
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/contato_agradecimento.html">';
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo '<META HTTP-EQUIV="Refresh" Content="1; URL=../view/erro.html">';
 }
 
 mysqli_close($conn);
